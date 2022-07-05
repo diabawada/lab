@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    image: nginx-example-site 
+    build: .
+    container_name: nginx-example-site
+    restart: always
+    ports:
+      - "8080:80"
